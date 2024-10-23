@@ -1,0 +1,129 @@
+html {
+    font-size: 17px;
+}
+
+body {
+    background: linear-gradient(to bottom, #3c7e4aff, #79bda8ff), url(https://source.unsplash.com/mcSDtbWXUZU);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    width: 100%;
+    color: #ffffff;
+}
+
+main {
+    margin: 3.2em auto 0;
+    max-width: 680px;
+    min-width: 460px;
+    width: 80vw;
+}
+
+header {
+    margin: 0 0 5em 0;
+    padding: 0 8px;
+}
+
+#title,
+#description {
+    color: #f5f5f5;
+    margin: 0 0 0.5em;
+    text-align: center;
+}
+
+#title {
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}
+
+#description {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#survey-form {
+    background-color: rgba(47, 79, 79, 0.85); /* Dark slate gray with transparency */
+    border-radius: 8px;
+    padding: 2.5em;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #3c7e4a; /* Nature-inspired green */
+    margin: 0 0 2.55em;
+    padding: 0 1em;
+}
+
+legend {
+    background-color: #2c3e50;
+    font-size: 1.2rem;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 1.1rem;
+    display: block;
+    margin: 0.6em 0;
+}
+
+input, select, textarea {
+    accent-color: #3c7e4a;
+    background-color: #e0f0eb;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2.1em;
+    padding: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin: 1.85em 0 1em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: inline-block;
+    margin: -2px 5px 0 5px;
+    vertical-align: middle;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.normal-text {
+    font-size: 1.1rem;
+    margin: 0 0 0.65em;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    display: block;
+    font-size: 1.2rem;
+    margin: 15px auto 0;
+    min-width: 220px;
+    height: 2.8rem;
+    width: 25vw;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+button[type="submit"] {
+    background-color: #3c7e4a; /* Nature green for submit */
+}
+
+button[type="reset"] {
+    background-color: #34495e; /* Deep blue-gray for reset */
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
