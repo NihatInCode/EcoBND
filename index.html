@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">EcoBND<sup>&reg;</sup> Survey Form</h1>
+            <p id="description"> Thank you for taking the time to help us improve our brand.</p>
+        </header>
+        
+        <form id="survey-form">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-group">
+                    <label id="name-label" for="name">Name
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                    </label>
+                    <label id="email-label" for="email">Email
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                    </label>
+                    <label id="number-label" for="number">Age
+                        <input type="number" id="number" name="age" min="13" max="120" placeholder="Enter Your Age" required>
+                    </label>
+                    <label for="referrer">How did you hear about us?
+                        <select id="referrer" name="referrer">
+                            <option value="">(select one)</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="youtube">YouTube Channel</option>
+                            <option value="commercials">Commercials</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Area of Expertise</legend>
+                <div class="form-group">
+                    <p class="normal-text">What's your expertise area?</p>
+
+                    <label>
+                        <input type="radio" name="expertise" id="engineering" value="engineering" checked> Engineering
+                    </label>
+                    <label>
+                        <input type="radio" name="expertise" id="architecture" value="architecture"> Architecture
+                    </label>
+                    <label>
+                        <input type="radio" name="expertise" id="social-sciences" value="social-sciences"> Social Sciences
+                    </label>
+                    <label>
+                        <input type="radio" name="expertise" id="other" value="other"> Other
+                    </label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Rate of EcoBND</legend>
+                <div class="form-group">
+                    <p class="normal-text">Would you recommend EcoBND to a friend?</p>
+                    <label for="definitely">
+                        <input type="checkbox" id="definitely" name="rating" value="definitely" checked> Definitely &#x1f600;
+                    </label>
+                    <label for="maybe">
+                        <input type="checkbox" id="maybe" name="rating" value="maybe"> Maybe &#x1f611;
+                    </label>
+                    <label for="not-sure">
+                        <input type="checkbox" id="not-sure" name="rating" value="not-sure"> Not Sure &#x1f620;
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Any changes or potential improvements?
+                        <textarea id="comments" name="comments" cols="30" rows="4"
+                            placeholder="Enter your comment here..."></textarea>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="form-group">
+                    <label for="dropdown">When was the last time you seen the EcoBND's posts?</label>
+                    <select id="dropdown" name="last-seen">
+                        <option value="">(select one)</option>
+                        <option value="today">Today</option>
+                        <option value="this-week">This week</option>
+                        <option value="this-month">This month</option>
+                        <option value="more-than-one-year">More than one year</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+            <button id="submit" type="submit">Submit</button>
+            <button id="reset" type="reset" onclick="alert('Reset completed..!')">Reset</button>
+        </form>
+    </main>
+</body>
+</html>
